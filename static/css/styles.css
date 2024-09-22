@@ -1,0 +1,136 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    transition: background 0.5s ease;  /* Smooth background transition */
+}
+
+#app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.glassmorphism:hover {
+    transform: scale(1.05);
+}
+
+#player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.album-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#controls {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#progress-bar {
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button {
+    background-color: #ffffff33;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff55;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#queue-container {
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+/* Custom Scrollbar */
+#queue-container::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+#queue-container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Background of the track */
+}
+
+#queue-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.5); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+#queue-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.7); /* Color of the scrollbar thumb on hover */
+}
+
+#song-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#song-list li {
+    padding: 10px;
+    background-color: #ffffff22;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#song-list li:hover {
+    background-color: #ffffff55;
+}
+
+#song-list li.dragging {
+    opacity: 0.5;
+}
