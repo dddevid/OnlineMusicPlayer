@@ -10,5 +10,7 @@
 - A little bit of time
 
 ### How to download it?
-1. Clone the Repo
-   ```git clone https://github.com/dddevid/OnlineMusicPlayer.git```
+1. Clone the Repo:
+   ```
+   git clone https://github.com/dddevid/OnlineMusicPlayer.git
+   ```
