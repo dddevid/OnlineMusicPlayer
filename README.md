@@ -21,5 +21,5 @@
   Add the songs (mp3 only) to the folder `static/songs/`
   Then add the album images to `static/album-art/`
 4. Edit app.js
-   Edit the songs by editing `title` with the song name, then edit `file` with the file name and you are ready to go
+   Edit the songs by editing `title` with the song name, then edit `file` with the file name and you are ready to go (remember to add a `,` at the end of each line)
    
