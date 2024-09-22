@@ -17,3 +17,9 @@
 2. Go in Delete the delete me files
    Go to `static/songs/` and delete "`DELETE ME`"
    Then go to `static/album-art/` and delete "`DELETE ME`"
+3. Add the songs
+  Add the songs (mp3 only) to the folder `static/songs/`
+  Then add the album images to `static/album-art/`
+4. Edit app.js
+   Edit the songs by editing `title` with the song name, then edit `file` with the file name and you are ready to go
+   
