@@ -14,3 +14,6 @@
    ```
    git clone https://github.com/dddevid/OnlineMusicPlayer.git
    ```
+2. Go in Delete the delete me files
+   Go to `static/songs/` and delete "`DELETE ME`"
+   Then go to `static/album-art/` and delete "`DELETE ME`"
